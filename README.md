@@ -24,3 +24,11 @@ Curley braces are also used to define function scope, etc..
 Now, curley braces are also required in React and HTML code when you want to embed any JS, be that an object or a function (which i guess is also kinda an object. Or at least a first class citizen just like an object). <div>{person}</div> will display the person object in HTML. 
 
 Add in all the needs for paranthesis and square brackets and you have many opportunities for some classy punctuation salads. This will be normal. This will take much getting used to. Good luck. I hear Vue.JS doesn't improve this. Lisp doesn't seem so silly these days...
+
+## object destructuring
+JS objects can be 'decomposed' into their individual elements (either objects or primitives). For example, we had an array, lines[], that held arrays of 3 integers;
+const [a,b,c] = lines[i]; 
+decalres and initializes three constants; a, b, and c; based on the values in the array lines[i]
+
+## array mapping
+JS has a map function similar to Python's that can be used on arrays. Also of note, JS has a Map type for when you need a bit more than a primitive array.
