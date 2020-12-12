@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import menuBar from './menuBar';
+import MenuBar from './menuBar';
 import './index.css';
 
 function Square(props){
@@ -140,7 +140,8 @@ function Square(props){
       return null;
   }
   
+  const menuBar = <MenuBar />
   // ========================================
   
-  ReactDOM.render(menuBar(), document.getElementById('menuBar'));
+  ReactDOM.render(menuBar, document.getElementById('menuBar'));
   ReactDOM.render(<Game />, document.getElementById('root'));

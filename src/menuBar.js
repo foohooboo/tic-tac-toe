@@ -1,6 +1,6 @@
 import React from 'react';
 
-const menuBar = () => {
+function MenuBar(props) {
     return(
         <div>
             <p>Test Paragraph</p>
@@ -13,4 +13,4 @@ const menuBar = () => {
     );
 }
 
-export default menuBar
+export default MenuBar
