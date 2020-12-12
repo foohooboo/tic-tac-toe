@@ -142,5 +142,5 @@ function Square(props){
   
   // ========================================
   
-  ReactDOM.render(<menuBar />, document.getElementById('menuBar'));
+  // ReactDOM.render(<menuBar />, document.getElementById('menuBar'));
   ReactDOM.render(<Game />, document.getElementById('root'));
