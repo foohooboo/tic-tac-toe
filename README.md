@@ -32,3 +32,10 @@ decalres and initializes three constants; a, b, and c; based on the values in th
 
 ## array mapping
 JS has a map function similar to Python's that can be used on arrays. Also of note, JS has a Map type for when you need a bit more than a primitive array.
+
+## CSS 
+p { background-color: blue; } will set ALL p elements on the page
+.className { background-color: blue; } is a class identifier, used by appying the 'class="className"' attribute to an element
+p.className { ... } will indicate that only paragraph elements with the className class will be styled
+* wildcard is a thing, * {} will hit every darn element out there
+h1, p2, p {} is a nice way to consolidate styles that are common to multiple element types
