@@ -10,4 +10,4 @@ function menuBar(props){
     )
 }
 
-export default menubar
+export default menuBar
