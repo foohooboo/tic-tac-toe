@@ -141,9 +141,9 @@ function Square(props){
   }
   
 const menuItems = [
-  {'Home': 'www.google.com'},
-  {'About': 'www.yahoo.com'},
-  {'Help': 'www.msn.com'},  
+  {name: 'Home', address: 'www.google.com'},
+  {name: 'About', address: 'www.yahoo.com'},
+  {name: 'Help', address: 'www.amazon.com'},
 ];
 
   // ========================================
