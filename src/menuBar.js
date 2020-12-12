@@ -1,15 +1,14 @@
 import React from 'react';
+import './menuBar.css';
 
 function MenuBar(props) {
+    const menuItems = props.menuItems.map((item, address) = () => {
+        <li><a href={address}>{item}</a></li>
+    });
     return(
-        <div>
-            <p>Test Paragraph</p>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Help</li>
+                {menuItems}
             </ul>
-        </div>
     );
 }
 

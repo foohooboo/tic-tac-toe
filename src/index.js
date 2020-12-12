@@ -140,7 +140,14 @@ function Square(props){
       return null;
   }
   
+const menuItems = [
+  {'Home': 'www.google.com'},
+  {'About': 'www.yahoo.com'},
+  {'Help': 'www.msn.com'},  
+];
+
   // ========================================
   
-  ReactDOM.render(MenuBar(), document.getElementById('menu-bar'));
+  const menuBar = <MenuBar menuItems = {menuItems} />
+  ReactDOM.render(menuBar, document.getElementById('menu-bar'));
   ReactDOM.render(<Game />, document.getElementById('root'));
