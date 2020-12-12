@@ -1,6 +1,6 @@
 import React from 'react';
 
-function menuBar(props){
+const menuBar = () => {
     return(
         <div>
             <p>Test Paragraph</p>
