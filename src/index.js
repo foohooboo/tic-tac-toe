@@ -140,8 +140,7 @@ function Square(props){
       return null;
   }
   
-  const menuBar = <MenuBar />
   // ========================================
   
-  ReactDOM.render(menuBar, document.getElementById('menuBar'));
+  ReactDOM.render(MenuBar(), document.getElementById('menu-bar'));
   ReactDOM.render(<Game />, document.getElementById('root'));
