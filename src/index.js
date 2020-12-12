@@ -111,7 +111,7 @@ function Square(props){
             />
           </div>
           <div className="game-info">
-      <div className='status'>{status}</div>
+            <div className='status'>{status}</div>
             <ol>{moves}</ol>
           </div>
         </div>
