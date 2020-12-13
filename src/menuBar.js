@@ -9,7 +9,7 @@ function MenuBar(props) {
     const menuItems = () => (
         <div>
             <ul>
-                {props.menuItems.map(item => <li key={name}><a href = {item.address}> {item.name} </a> </li>)}
+                {props.menuItems.map(item => <li key={item.name}><a href = {item.address}> {item.name} </a> </li>)}
             </ul>
         </div>
     );
