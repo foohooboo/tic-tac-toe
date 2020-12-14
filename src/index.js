@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MenuBar from './menuBar';
 import './index.css';
+import MenuBar from './menuBar';
 
 function Square(props){
     return (

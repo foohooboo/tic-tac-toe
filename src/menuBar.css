@@ -10,14 +10,24 @@ li {
     float: left;
 }
 
+/* a {
+    display: block;
+    padding: 0.5rem;
+    background-color: #dddddd;
+} */
+
 li a {
     display: block;
     color: whitesmoke;
     text-align: center;
-    padding: 1.5rem 1.5rem;
+    padding: 1rem 1rem;
     text-decoration: none;
 }
 
 li:hover{
-    background-color: #333333;
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
 }
