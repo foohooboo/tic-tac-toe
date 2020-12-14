@@ -141,9 +141,9 @@ function Square(props){
   }
   
 const menuItems = [
-  {name: 'Home', address: 'www.google.com'},
-  {name: 'Help', address: 'www.amazon.com', rightAlign: true},
-  {name: 'About', address: 'www.yahoo.com'},
+  {name: 'Home', address: 'https://www.google.com'},
+  {name: 'Help', address: 'https://www.amazon.com', rightAlign: true},
+  {name: 'About', address: 'https://www.yahoo.com'},
 ];
 
   // ========================================
