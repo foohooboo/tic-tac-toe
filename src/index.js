@@ -142,12 +142,12 @@ function Square(props){
   
 const menuItems = [
   {name: 'Home', address: 'www.google.com'},
+  {name: 'Help', address: 'www.amazon.com', rightAlign: true},
   {name: 'About', address: 'www.yahoo.com'},
-  {name: 'Help', address: 'www.amazon.com'},
 ];
 
   // ========================================
   
-  const menuBar = <MenuBar menuItems = {menuItems} />
+  const menuBar = <MenuBar menuItems = {menuItems} testProp = "Hello" />
   ReactDOM.render(menuBar, document.getElementById('menu-bar'));
   ReactDOM.render(<Game />, document.getElementById('root'));
