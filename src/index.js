@@ -140,14 +140,21 @@ function Square(props){
       return null;
   }
   
+const ddItems = [
+  {name: "don't", link: 'fake'},
+  {name: "drop", link: 'fake'},
+  {name: "that", link: 'fake'},
+  {name: "thun-duh-dun", link: 'fake'},
+];
 const menuItems = [
-  {name: 'Home', address: 'https://www.google.com'},
+  {name: 'Home', address: 'https://www.google.com', active: true},
   {name: 'Help', address: 'https://www.amazon.com', rightAlign: true},
   {name: 'About', address: 'https://www.yahoo.com'},
+  {name: 'Dropdown', address: 'dummy', dropdown: true, dropdownItems: ddItems},
 ];
 
   // ========================================
   
-  const menuBar = <MenuBar menuItems = {menuItems} testProp = "Hello" />
+  const menuBar = <MenuBar menuItems= {menuItems} />
   ReactDOM.render(menuBar, document.getElementById('menu-bar'));
   ReactDOM.render(<Game />, document.getElementById('root'));
