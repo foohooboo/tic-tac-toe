@@ -3,9 +3,9 @@ import Dropdown from './dropdown.js';
 import './menuBar.css';
 
 /**
- * 
+ * @description Given a list of menuItems, builds and returns a horizontal nav 
  * @param {Array()} props Array of items to be displayed in a horizontal nav bar.
- * props item format: {name: "someName", address: "someLink", active: boolean, rightAlign: boolean, dropDown: boolean}.
+ * props item format: menuItems = {name: "someName", address: "URL", active: boolean, rightAlign: boolean, dropDown: boolean}.
  * active, rightAlign and dropDown are optional attributes
  */
 function MenuBar(props) {
@@ -15,8 +15,11 @@ function MenuBar(props) {
         }
         
         if (item.dropdown){
-            console.log('should see something');
-        return <Dropdown dropdownItems={item.dropdownItems} link={item.address} name={item.name}/>;
+            return (
+                <li key={item.name}>
+                    <Dropdown dropdownItems={item.dropdownItems} link={item.address} name={item.name}/>
+                </li>
+            );
         }
         else{
             return (

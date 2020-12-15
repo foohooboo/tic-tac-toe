@@ -2,10 +2,8 @@ ul {
     list-style-type: none;
     margin: 0rem;
     padding: 0rem;
-    overflow: hidden;
+    overflow: auto;
     background-color: #333;
-    /* width: 5rem; */
-    /* width property will make navbar vertical */
 }
 
 li {

@@ -12,9 +12,10 @@ function Square(props){
 }
   
   class Board extends React.Component {
-    // arrow functions carry the state of the object that defined them, NOT the object that calls them
-    // this allows Game to pass the state to Board to pass its state down to Square, the Square and Board become 
-    // 'Controlled' components (ie: they don't manage their own state)
+    /** arrow functions carry the state of the object that defined them, NOT the object that calls them
+    * this allows Game to pass the state to Board to pass its state down to Square, the Square and Board become 
+    * 'Controlled' components (ie: they don't manage their own state)
+    **/
     renderSquare(i) {
       return (
         <Square
@@ -144,17 +145,17 @@ const ddItems = [
   {name: "don't", link: 'fake'},
   {name: "drop", link: 'fake'},
   {name: "that", link: 'fake'},
-  {name: "thun-duh-dun", link: 'fake'},
+  {name: "thun-da-dun", link: 'fake'},
 ];
 const menuItems = [
   {name: 'Home', address: 'https://www.google.com', active: true},
   {name: 'Help', address: 'https://www.amazon.com', rightAlign: true},
   {name: 'About', address: 'https://www.yahoo.com'},
-  {name: 'Dropdown', address: 'dummy', dropdown: true, dropdownItems: ddItems},
+  {name: 'Dropdown', address: null, dropdown: true, dropdownItems: ddItems},
 ];
 
   // ========================================
   
-  const menuBar = <MenuBar menuItems= {menuItems} />
+  const menuBar = <MenuBar menuItems= {menuItems} />;
   ReactDOM.render(menuBar, document.getElementById('menu-bar'));
   ReactDOM.render(<Game />, document.getElementById('root'));
