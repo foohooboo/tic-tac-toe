@@ -33,9 +33,11 @@ function MenuBar(props) {
     });
 
     return(
-        <ul>
-            {menuItems}
-        </ul>
+        <div className='topNav'>
+            <ul>
+                {menuItems}
+            </ul>
+        </div>
     );
 }
 
