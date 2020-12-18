@@ -1,3 +1,5 @@
+# Build project with only npm start from home directory
+
 # Project can be viewed at https://master.d3kflwv6ppfjft.amplifyapp.com/
 
 # Learned in this project:
