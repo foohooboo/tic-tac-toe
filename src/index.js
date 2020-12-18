@@ -142,7 +142,7 @@ function Square(props){
   }
   
 const ddItems = [
-  {name: "Proj 1", link: 'fake'},
+  {name: "Tic-Tac-Toe", link: 'https://master.d3kflwv6ppfjft.amplifyapp.com/'},
   {name: "Proj 2", link: 'fake'},
   {name: "Proj 3", link: 'fake'},
   {name: "Proj 4", link: 'fake'},
@@ -152,7 +152,7 @@ const menuItems = [
   {name: 'Help', address: 'https://www.amazon.com', rightAlign: true},
   {name: 'GitHub', address: 'https://github.com/foohooboo/tic-tac-toe'},
   {name: 'LinkedIn', address: 'https://www.linkedin.com/in/daniel-evans-53a2391bb/'},
-  {name: 'More Projects', address: null, dropdown: true, dropdownItems: ddItems},
+  {name: 'My Projects', address: null, dropdown: true, dropdownItems: ddItems},
 ];
 
   // ========================================
