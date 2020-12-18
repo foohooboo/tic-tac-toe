@@ -1,3 +1,5 @@
+# Project can be viewed at https://master.d3kflwv6ppfjft.amplifyapp.com/
+
 # Learned in this project:
 
 ## arrow function fun fact:
@@ -10,7 +12,7 @@ Exampled in this project; we wanted certain updates to the state of the program 
 This one is a re-learn. Curley braces, {}, in JS indicate an object. Objects contain key:value pairs. ie the JS code: const person = {name: 'Dave'}; creates an object called a person with one property, name, whose value is Dave. Curly braces will also be used in JS code when using variables inside of strings: 'The person's name is ${person.name}.'
   note: this is called a Template Literal, and the single quotes are absolutely required instead of double quotes. 
 
-You might also see them embedded in an array like we did in the state of the Game:
+You might also see them in react code embedded in an array like we did in the state of the Game:
   this.state ={
               history: [{
                 squares: Array(9).fill(null),
@@ -21,7 +23,7 @@ You might also see them embedded in an array like we did in the state of the Gam
           
 Curley braces are also used to define function scope, etc..
   
-Now, curley braces are also required in React and HTML code when you want to embed any JS, be that an object or a function (which i guess is also kinda an object. Or at least a first class citizen just like an object). <div>{person}</div> will display the person object in HTML. 
+Now, curley braces are required in React and HTML code when you want to embed any JS, be that an object or a function (which i guess is also kinda an object. Or at least a first class citizen just like an object). <div>{person}</div> will display the person object in HTML. 
 
 Add in all the needs for paranthesis and square brackets and you have many opportunities for some classy punctuation salads. This will be normal. This will take much getting used to. Good luck. I hear Vue.JS doesn't improve this. Lisp doesn't seem so silly these days...
 
@@ -39,3 +41,18 @@ p { background-color: blue; } will set ALL p elements on the page
 p.className { ... } will indicate that only paragraph elements with the className class will be styled
 * wildcard is a thing, * {} will hit every darn element out there
 h1, p2, p {} is a nice way to consolidate styles that are common to multiple element types
+
+## Positioning: Relative -vs- Absolute
+use case: the dropdown menu was working on hover, but the menu items were dropping down INSIDE the navbar element, so they were disappearing. 
+switched position of the dropdown element from relative to absolute and BOOM! Perfection. 
+### Position: Relative 
+moves the element relative to where it would have normally shown up in the normal html layout. No other elements are affected.
+### Position: Absolute
+A bit more tricky than the rest, i think. Absolute positions an element relative to its nearest POSITIONED ANCESTOR. 
+Positioned: havning any position property set other than static
+Ancestor: any related element higher in the html document tree
+If no positioned ancestor exists, uses the document body and moves w/ scrolling
+### Position: Fixed
+places an element relative to the viewport. When you scroll, it doesn't move! will overlap anything and everything
+### Position: Sticky
+seems potentially useful for navbars n such. element is relative on page until you scroll to a defined position, at which point the element acts fixed
