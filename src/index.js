@@ -142,16 +142,17 @@ function Square(props){
   }
   
 const ddItems = [
-  {name: "don't", link: 'fake'},
-  {name: "drop", link: 'fake'},
-  {name: "that", link: 'fake'},
-  {name: "thun-da-dun", link: 'fake'},
+  {name: "Proj 1", link: 'fake'},
+  {name: "Proj 2", link: 'fake'},
+  {name: "Proj 3", link: 'fake'},
+  {name: "Proj 4", link: 'fake'},
 ];
 const menuItems = [
   {name: 'Home', address: 'https://www.google.com', active: true},
   {name: 'Help', address: 'https://www.amazon.com', rightAlign: true},
-  {name: 'About', address: 'https://www.yahoo.com'},
-  {name: 'Dropdown', address: null, dropdown: true, dropdownItems: ddItems},
+  {name: 'GitHub', address: 'https://github.com/foohooboo/tic-tac-toe'},
+  {name: 'LinkedIn', address: 'https://www.linkedin.com/in/daniel-evans-53a2391bb/'}
+  {name: 'More Projects', address: null, dropdown: true, dropdownItems: ddItems},
 ];
 
   // ========================================
