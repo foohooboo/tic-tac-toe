@@ -9,7 +9,7 @@
 
 .dropdown-content {
     /* display originally none to hide the menu until hover event */
-    display: none;
+    /* display: none; */
     position: absolute;
     background-color: #f9f9f9;
     min-width: 6rem;
@@ -22,6 +22,7 @@
 
 .dropdown-content ul li a {
     text-align: left;
+    padding: 0.75rem 1rem;
 }
 
 .dropdown:hover .dropdown-content {

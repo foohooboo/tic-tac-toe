@@ -143,9 +143,11 @@ function Square(props){
   
 const ddItems = [
   {name: "Tic-Tac-Toe", link: 'https://master.d3kflwv6ppfjft.amplifyapp.com/'},
-  {name: "Proj 2", link: 'fake'},
-  {name: "Proj 3", link: 'fake'},
-  {name: "Proj 4", link: 'fake'},
+  {name: "Workouts", link: 'fake'},
+  {name: "Family Recipes", link: 'fake'},
+  {name: "Dinner Out", link: 'fake'},
+  {name: "SwigBook", link: 'fake'},
+  {name: "Mock Trader", link: 'fake'},
 ];
 const menuItems = [
   {name: 'Home', address: 'https://www.google.com', active: true},
