@@ -12,7 +12,7 @@ Exampled in this project; we wanted certain updates to the state of the program 
 This one is a re-learn. Curley braces, {}, in JS indicate an object. Objects contain key:value pairs. ie the JS code: const person = {name: 'Dave'}; creates an object called a person with one property, name, whose value is Dave. Curly braces will also be used in JS code when using variables inside of strings: 'The person's name is ${person.name}.'
   note: this is called a Template Literal, and the single quotes are absolutely required instead of double quotes. 
 
-You might also see them embedded in an array like we did in the state of the Game:
+You might also see them in react code embedded in an array like we did in the state of the Game:
   this.state ={
               history: [{
                 squares: Array(9).fill(null),
@@ -23,7 +23,7 @@ You might also see them embedded in an array like we did in the state of the Gam
           
 Curley braces are also used to define function scope, etc..
   
-Now, curley braces are also required in React and HTML code when you want to embed any JS, be that an object or a function (which i guess is also kinda an object. Or at least a first class citizen just like an object). <div>{person}</div> will display the person object in HTML. 
+Now, curley braces are required in React and HTML code when you want to embed any JS, be that an object or a function (which i guess is also kinda an object. Or at least a first class citizen just like an object). <div>{person}</div> will display the person object in HTML. 
 
 Add in all the needs for paranthesis and square brackets and you have many opportunities for some classy punctuation salads. This will be normal. This will take much getting used to. Good luck. I hear Vue.JS doesn't improve this. Lisp doesn't seem so silly these days...
 
