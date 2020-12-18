@@ -151,7 +151,7 @@ const menuItems = [
   {name: 'Home', address: 'https://www.google.com', active: true},
   {name: 'Help', address: 'https://www.amazon.com', rightAlign: true},
   {name: 'GitHub', address: 'https://github.com/foohooboo/tic-tac-toe'},
-  {name: 'LinkedIn', address: 'https://www.linkedin.com/in/daniel-evans-53a2391bb/'}
+  {name: 'LinkedIn', address: 'https://www.linkedin.com/in/daniel-evans-53a2391bb/'},
   {name: 'More Projects', address: null, dropdown: true, dropdownItems: ddItems},
 ];
 
