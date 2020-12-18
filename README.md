@@ -41,3 +41,18 @@ p { background-color: blue; } will set ALL p elements on the page
 p.className { ... } will indicate that only paragraph elements with the className class will be styled
 * wildcard is a thing, * {} will hit every darn element out there
 h1, p2, p {} is a nice way to consolidate styles that are common to multiple element types
+
+## Positioning: Relative -vs- Absolute
+use case: the dropdown menu was working on hover, but the menu items were dropping down INSIDE the navbar element, so they were disappearing. 
+switched position of the dropdown element from relative to absolute and BOOM! Perfection. 
+### Position: Relative 
+moves the element relative to where it would have normally shown up in the normal html layout. No other elements are affected.
+### Position: Absolute
+A bit more tricky than the rest, i think. Absolute positions an element relative to its nearest POSITIONED ANCESTOR. 
+Positioned: havning any position property set other than static
+Ancestor: any related element higher in the html document tree
+If no positioned ancestor exists, uses the document body and moves w/ scrolling
+### Position: Fixed
+places an element relative to the viewport. When you scroll, it doesn't move! will overlap anything and everything
+### Position: Sticky
+seems potentially useful for navbars n such. element is relative on page until you scroll to a defined position, at which point the element acts fixed
